@@ -97,6 +97,10 @@ set(libpng_sources
   pngwrite.c
   pngwtran.c
   pngwutil.c
+  lz4.c
+  lz4hc.c
+  lz4frame.c
+  xxhash.c
 )
 set(pngtest_sources
   pngtest.c

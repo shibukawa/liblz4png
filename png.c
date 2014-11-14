@@ -2517,7 +2517,7 @@ png_check_IHDR(png_const_structrp png_ptr,
       error = 1;
    }
 
-   if (compression_type != PNG_COMPRESSION_TYPE_BASE)
+   if (compression_type != PNG_COMPRESSION_TYPE_BASE && compression_type != PNG_COMPRESSION_TYPE_LZ4)
    {
       png_warning(png_ptr, "Unknown compression method in IHDR");
       error = 1;

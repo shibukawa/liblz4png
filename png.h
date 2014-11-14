@@ -812,6 +812,7 @@ typedef png_unknown_chunk * * png_unknown_chunkpp;
 /* This is for compression type. PNG 1.0-1.2 only define the single type. */
 #define PNG_COMPRESSION_TYPE_BASE 0 /* Deflate method 8, 32K window */
 #define PNG_COMPRESSION_TYPE_DEFAULT PNG_COMPRESSION_TYPE_BASE
+#define PNG_COMPRESSION_TYPE_LZ4 1  /* LZ4 high compression */
 
 /* This is for filter type. PNG 1.0-1.2 only define the single type. */
 #define PNG_FILTER_TYPE_BASE      0 /* Single row per-byte filtering */
